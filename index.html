@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML con datos de la base de datos</title>
+</head>
+<body>
+    <h1>Datos de la base de datos</h1>
+    <ul id="datos"></ul>
+    
+    <!-- Script para obtener y mostrar los datos -->
+    <script>
+        // Aquí puedes hacer una solicitud AJAX para obtener los datos de la base de datos
+        // Por simplicidad, mostraré datos de ejemplo directamente en la página HTML
+        var datos = ["Dato 1", "Dato 2", "Dato 3"];
+        var lista = document.getElementById("datos");
+        datos.forEach(function(dato) {
+            var li = document.createElement("li");
+            li.textContent = dato;
+            lista.appendChild(li);
+        });
+    </script>
+</body>
+</html>
